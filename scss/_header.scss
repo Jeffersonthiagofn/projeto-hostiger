@@ -33,5 +33,25 @@ header{
             }
         }
     }
+
+    @include responisive (600px) {
+        .container {
+            justify-content: center;
+        }
+        nav {
+            display: none;
+        }
+
+
+    }
+
+    @include responisive (480px) {
+            height: 8rem;
+            .logo {
+                max-width: 140px;
+            }
+        }
+
+       
       
 }

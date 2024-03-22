@@ -1,4 +1,4 @@
-@mixin responisive ($ScreenWidth) {
+@mixin responsive ($ScreenWidth) {
     @media (max-width: $ScreenWidth) {
         @content;        
     }

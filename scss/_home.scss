@@ -98,8 +98,8 @@
 .s-resources{
     padding: 14.9rem 0 9.9rem 0;
     .top {
-        @include flex(row, center,space-between)
-        padding-bottom: 5.3rem;
+        @include flex(row, center,space-between);
+        padding-bottom:5.3rem ;
         h2 {
             color: $gray-01;
             font-family: 'PT Sans', sans-serif;
@@ -117,14 +117,14 @@
     }
 
     .content {
-        @include flex (row, flex-start, space-between)
-        .icon {
-            @include flex (row, center, center)
-            background-color: rgba(197, 190, 220, 0.1);
+        @include flex (row, flex-start, space-between);
+        .icon  {
+            @include flex (row, center, center);
             width: 64px;
             height: 6.4rem;
             border-radius: 12px;
             margin:0 0 3rem 0 ;
+            background-color: rgba(197, 190, 220, 0.1);
         }
         .info{
             max-width: 23.9rem;
@@ -158,8 +158,8 @@
         ul {
             width: 100%;
             max-width: 90.4rem;
-            @include flex (row, flex-start, space-between)
-            margin: 4.1rem 0 0 0;
+            @include flex (row, flex-start, space-between);
+            margin:4.1rem 0 0 0;
             border-bottom: 3px solid rgba(95, 60, 161, 0.1);
             padding: 0 0 6.5rem 2rem;
         }

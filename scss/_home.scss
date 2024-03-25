@@ -164,4 +164,62 @@
             padding: 0 0 6.5rem 2rem;
         }
     }
+
+    @include responsive(991px) {
+        .content {
+            flex-direction: column;
+            align-items: flex-start;
+            .card-featured {
+                @include flex(column, center, center);
+                max-width: 100%;
+                height: auto;
+                padding: 3rem;
+                .info{
+                    max-width: 100%;
+                    h4, p{
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    @include responsive(768px) {
+        padding: 10rem 0 5rem 0 ;
+        .top{
+            flex-direction: column;
+            h2{
+                text-align: center;
+                margin: 0 0 2rem 0;
+            }
+        }
+        .content{
+            ul {
+                gap: 2.5rem;
+            }
+        }
+
+    }
+
+    @include responsive(480px) {
+        padding:6rem 0 0 0 ;
+        .content {
+            ul{
+                flex-direction: column;
+                padding-left:0px;
+                margin: 3rem 0 0 0;
+                li{
+                    @include flex(column, center, center);
+                    h4,p {
+                        text-align: center;
+                    }
+                }
+            }
+            .info{
+                max-width: 95%;
+            }
+        }
+
+    }
+
 }
